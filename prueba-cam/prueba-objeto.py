@@ -3,7 +3,7 @@ import numpy as np
 import imutils
 import os
 
-Datos= 'N'
+Datos= 'C:/Users/Arenas/Desktop/objetos-nao/p'
 if not os.path.exists(Datos):
     print('Carpeta creada: ', Datos)
     os.makedirs(Datos)
