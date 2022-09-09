@@ -9,5 +9,5 @@ Si tu sabes lo que vales, ve y consigue lo que mereces pero tendrás que soporta
 TÚ ERES CAPAZ DE TODO.
 
 
-__* si puedes imaginarlo puedes programarlo
- -Alejandro Taboada- __*
+si puedes imaginarlo puedes programarlo
+  -Alejandro Taboada- 
