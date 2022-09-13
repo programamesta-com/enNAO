@@ -1,0 +1,15 @@
+## Introduccion Unidad 1 Python
+
+En esta primera unidad del curso introductorio de Nao abordaremos un pequeño curso basico  de python el cual sera  de gran importancia terminar para poder empesar a usar las librerias de  OpenCV y Cascade que estan basadas en este lenguaje, Se abordaran los siguientes temas
+
+ 1. Que es python
+ 1.1 Estructura basica 
+ 1.2 Elementos basicos de python
+ 1.3 Ciclos, Arrays, Datos de entrada y salida
+ 1.4 Clases y objetos
+ 1.5 Herencia
+ 1.6 Librerias
+
+ ![ boy code](/assets/boy-code.png)
+
+
