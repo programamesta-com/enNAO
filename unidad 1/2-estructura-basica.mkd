@@ -1,0 +1,34 @@
+![ python](/assets/structure.png)
+
+
+
+
+
+
+
+### 1.2 Estructura basica de python
+
+Todo aprendizaje empieza por una primera lección, aquella que sienta las bases de las siguientes lecciones o materias. Y para empezar con buen pie, conviene elegir bien por dónde iniciamos el aprendizaje de cualquier tema, como el que nos ocupa.
+En el caso de la programación, y más concretamente de Python, un buen primer paso para iniciarnos en este lenguaje de programación consiste en familiarizarnos con su sintaxis básica. Así aprenderemos las nociones primarias de este lenguaje y nos será más fácil ampliar nuestro conocimiento lección a lección.
+Veamos cómo es la sintaxis básica de Python, uno de los lenguajes de programación más populares y uno de los más recomendables para iniciarse en la escritura de código. Si ya conoces otros lenguajes de programación, tal vez te suene la sintaxis de Python. En cualquier caso, te será muy útil memorizarlo
+
+
+Hay dos maneras de trabajar con Python, mediante el modo interactivo y mediante el modo script. En el primero, ejecutamos la orden en tiempo real, mientras que, con el segundo, escribimos el código en Python y luego lo ejecutamos con el intérprete.
+#### 1.2.1 Modo interactivo y modo script
+En el modo interactivo, debemos activar el intérprete Python escribiendo Python en la línea de comandos. ¡Una vez puesto en marcha, ya podemos ejecutar órdenes, como la clásica print “Hello, Python!”.
+A medida que empecemos a programar empleando el lenguaje Python, nos será más práctico emplear un script donde hemos introducido todas las órdenes a ejecutar. Así, una vez situada la línea de comandos en la carpeta donde se encuentra el script, lo ejecutamos con la orden Python nombredelscript py.
+Identificadores Python
+
+#### 1.2.2 Identificadores 
+Los identificadores sirven precisamente para eso, para identificar una variable, función, clase, módulo u objeto. Suelen empezar con letras, en mayúscula o minúscula, o con un guión bajo seguido de un cero y varias letras o números.
+Hay que tener varias cosas en cuenta, como que Python diferencia entre mayúsculas y minúsculas o que no admite caracteres de puntuación como @, $ o %.
+Los nombres de clase empiezan con una letra mayúscula. Los demás identificadores empiezan con minúscula. Si el identificador empieza un guion bajo, significa que es privado. Si empieza con dos guiones bajos, se trata de un identificador privado. Si el identificador finaliza con dos guiones bajos, el identificador es un nombre especial definido por lenguaje.
+#### 1.2.3 Estructura de las líneas
+Un programa codificado con lenguaje Python está dividido en varias líneas lógicas y cada una de ellas finaliza con una nueva línea. Si la línea está en blanco, es ignorada por el intérprete de Python.
+Por otra parte, las órdenes y líneas se agrupan unas dentro de otras mediante sangrado o espaciado. Y para unir dos o más líneas, se emplea la barra inclinada hacia la izquierda.
+Otra posibilidad es que queramos realizar varias acciones o peticiones en una única línea. Para ello, podemos combinar todas las instancias empleando como separador el símbolo de punto y coma.
+
+#### 1.2.4 Comentarios y citas
+En Python, los comentarios empiezan con el carácter hash (#). Nosotros podemos leernos, es más, deberíamos, ya que nos aportarán información sobre el resto de código, pero el intérprete lo ignorará.
+Los comentarios pueden incluirse en una línea propia o al lado de una orden. Siempre que tenga el símbolo indicado, Python lo interpretará como comentario y no como código válido.
+En cuanto a las citas, Python admite las comillas simples o dobles. El texto incluido dentro de las comillas será el que se mostrará en pantalla o el que se tendrá en cuenta para la orden programada. Si necesitamos citar un texto extenso, nos será de utilidad las triples comillas, que permiten citar textos que ocupan varias líneas.
