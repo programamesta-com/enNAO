@@ -1,5 +1,5 @@
 
-![ python gif](/asset/giphy.gif)
+![ python gif](/assets/giphy.gif)
 
 
 ### 1.1 Que es python
