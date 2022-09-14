@@ -1,0 +1,157 @@
+
+
+
+### 1.3 Elementos básicos de Python, variables, tipos de datos, parámetros
+
+Elementos de un programa
+Un programa de Python es un fichero de texto (normalmente guardado con el juego de caracteres UTF-8) que contiene expresiones y sentencias del lenguaje Python. Esas expresiones y sentencias se consiguen combinando los elementos básicos del lenguaje.
+El lenguaje Python está formado por elementos (tokens) de diferentes tipos:
+
+
+*	palabras reservadas (keywords)
+*	funciones integradas (built-in functions)
+*	literales
+*	operadores
+*	delimitadores
+*	identificadores
+
+#### 1.3.1 Palabras reservadas (keywords)
+
+
+Las palabras reservadas de Python son las que forman el núcleo del lenguaje Python. Son las siguientes:
+ * False     * await     * else     * import    * pass
+ * None      * break     * except   * in        * raise
+ * True      * class     * finally  * is        * return
+ * and       * continue  * for      * lambda    * try
+ * as        * def       * from     * nonlocal  * while
+ * assert    * del       * global   * not       * with
+ * async     * elif      * if       * or        * yield
+
+Estas palabras no pueden utilizarse para nombrar otros elementos (variables, funciones, etc.), aunque pueden aparecer en cadenas de texto.
+Las palabras reservadas async y await se incluyeron como tales en el Python 3.7
+
+#### 1.3.2 Funciones integradas (built-in functions)
+Una función es un bloque de instrucciones agrupadas, que permiten reutilizar partes de un programa.
+Python incluye algunas funciones que están disponibles sin necesidad de importar ninguna biblioteca:
+
+
+
+|           |              |                |
+|-----------|------------- |--------------- |
+abs()       | aiter()      |   all()        |
+any()       | anext()      |   ascii()      |
+bin()       |  bool()      | breakpoints()  |
+bytearray() | bytes()      | callable()     |
+chr()       | lassmethod() |  compile()     |
+complex()   | delattr()    |   dict()       |
+dir()       | divmod()     |  enumerate()   |
+eval()      | exec()       |  filter()      |
+float()     |  format()    |  frozenset()   |
+getattr()   | globals()    |  hasattr()     |
+hash()      | help()       |  hex()         |
+id()        | input()      |  int()         |
+isinstance()| issubclass() |  iter()        |
+len()       | list()       | locals()       |
+map()       | max()        | memoryview()   |
+min()       | next()       | object()       |
+oct()       | open()       |  ord()         |        
+pow()       | print()      | property()     |
+range()     | repr()       | reversed()     |
+round()     | set()        | setattr()      |
+slice()     | sorted()     | staticmethod() |
+str()       | sum()        | super()        |
+tuple()     | type()       | vars()         |
+zip()       | import ()    |                |
+|           |              |                |
+
+Como se comenta en la lección Variables (1), los nombres de las funciones integradas se pueden utilizar para nombrar variables, pero entonces las funciones ya no estarán disponibles en el programa. Si se eliminan las variables, las funciones vuelven a estar disponibles.
+
+* Literales
+Los literales son los datos simples que Python es capaz de manejar:
+ * números: valores lógicos, enteros, decimales y complejos, en notación decimal, octal o hexadecimal
+ * cadenas de texto
+ * Operadores
+Los operadores son los caracteres que definen operaciones matemáticas (lógicas y aritméticas). Son los siguientes:
+
++     *       **      /       //      %      @
++     <<      >>      &       |       ^       ~
++     <       >       <=      >=      ==      !=
+
+Delimitadores
+Los delimitadores son los caracteres que permiten delimitar, separar o representar expresiones. Son los siguientes:
++   '       "       #       \
++   ()      []       {}
++   ,       :       .       ;       @       =       ->
++   +=      -=      *=      /=      //=     %=      @=
++   &=      |=      ^=      >>=     <<=     **=
+
+### 1.3.3  Identificadores
+Los identificadores son las palabras que se utilizan para nombrar elementos creados por el usuario u otros usuarios. Esos elementos pueden ser variables u objetos que almacenan información, funciones que agrupan instrucciones, clases que combinan ambos, módulos que agrupan los elementos anteriores, etc.
+Los identificadores están formados por letras (mayúsculas y minúsculas), números y el carácter guion bajo (_). Pueden ser caracteres Unicode, aunque normalmente se recomienda utilizar caracteres ASCII para evitar complicaciones a usuarios de otros países que utilizan juegos de caracteres diferentes.
+El primer carácter del identificador debe ser una letra.
+### 1.3.4 Funciones adicionales
+Un programa puede definir nuevas funciones o redefinir las funciones integradas. Los nombres de las funciones no pueden coincidir con las palabras reservadas.
+Un programa puede también importar nuevas funciones que se encuentran definidas en otros ficheros llamados módulos.
+Python incluye una biblioteca de módulos (llamada Biblioteca estándar) especializados en todo tipo de tareas.
+Además de la biblioteca estándar, existen miles de módulos escritos por diferentes programadores y accesibles en Internet. El principal repositorio de módulos es el Python Package Index (Índice de paquetes de Python), más conocido por PyPI.
+### 1.3.5 Tipos de variables en python
+Una variable es un sitio donde guardamos una determinada información. En función del tipo de información que guardemos (texto, números, booleanas, etc.), la variable será de uno u otro tipo. Por simplicidad sólo vamos a ver las variables de texto y numéricas, ya que son las que se usan en más del 80% de las ocasiones.
+Cada variable debe tener un nombre con el que referirnos a ella. Python tiene en cuenta si escribimos en mayúsculas o minúsculas la variable (lo que se conoce como case sensitive). No es lo mismo una variable que se llame f1 que una que se llame F1.
+Como es lógico y, para evitar confusiones, el nombre de la variable no puede coincidir con los nombres de los «comandos» de python (if, for, etc.). Tampoco podremos usar nombres de variables con tildes o con ñ.
+¿Y por qué hay que decir lo que se mete en cada variable? Porque en función de lo que haya dentro de ella, se podrán hacer una u otras cosas, como por ejemplo sumar dos números.
+### 1.3.6 En Python estas son las variables más comunes:
+Números
+En números hay dos tipos principales, los números enteros (llamados int) y los reales (llamados float). El separador decimal que tenemos que usar es el punto.
+Aunque si no decimos el tipo de número que va a contener, Python intentará decidir por si mismo cuál es el más apropiado, esto en ocasiones produce errores. Mi recomendación mientras estés empezando a aprender, es la de que siempre especificar qué tipo de número es, ya que evitará futuras frustraciones.
+
+~~~
+codigo ejemplo 
+>>> Definimos dos variables llamadas numero1 y
+>>> numero2, y asociaremos un número a cada una
+>>> numero1=int(2)
+>>> numero2=float(2.5)
+>>> print (numero1)
+2
+>>> print (numero2)
+2.5
+
+~~~
+
+Para saber de qué tipo es una determinada variable, basta con preguntarle a Python type(variable).
+Texto
+Las variables que almacenan texto se denominan strings (str). Tienen que estar entre comillas sencillas(‘) o dobles («), o si el texto ocupa varias líneas, entre triples comillas dobles («»») .
+
+~~~
+>>> # Definimos dos variables llamadas texto y
+>>> # texto2, y asociaremos un texto a cada una
+>>> texto="Esto es un texto"
+>>> texto2='Esto es otro texto'
+>>> print (texto)
+Esto es un texto
+>>> print (texto2)
+Esto es otro texto
+
+>>> # Definimos una nueva variable texto3 que
+>>> # incluye un texto multilinea.
+>>> texto3="""Hola
+... caracola"""
+>>> print (texto3)
+Hola
+caracola
+~~~
+
+Al igual que sucedía con los números, Python supone que lo que introducimos es un texto al estar entre comillas, aunque siempre podemos forzarle a interpretarlo como texto usando el comando str.
+
+### 1.3.7 print y variables
+Como hemos visto, el comando print es de gran utilidad para que el programa pueda comunicarse con nosotros. Este comando muestra el texto que pongamos, o incluso el valor que hay dentro de una variable. En el caso de que juntemos texto y números, debemos tomar la precaución de convertir los números en texto, ya que si no, Python no sabe cómo se hace la suma de un texto y un número.
+
+~~~
+texto="Esto es un texto"
+numero=15
+# El siguiente comando devuelve un error
+print(texto+" "+numero)
+# Convirtiendo el número en texto, solucionamos el problema.
+print(texto+" "+str(numero))
+~~~
+
+
