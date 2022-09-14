@@ -1,5 +1,5 @@
 
-![ python banners ](/assets/bannerpy.png)
+![ python banners ](/assets/bannerpy.jpg)
 
 ### 1.3 Elementos básicos de Python, variables, tipos de datos, parámetros
 
