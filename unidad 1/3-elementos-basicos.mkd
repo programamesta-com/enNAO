@@ -79,9 +79,10 @@ Los operadores son los caracteres que definen operaciones matemáticas (lógicas
 
 Delimitadores
 Los delimitadores son los caracteres que permiten delimitar, separar o representar expresiones. Son los siguientes:
+
 +   '       "       #       \
-+   ()      []       {}
-+   ,       :       .       ;       @       =       ->
++   ()      []      {} 
++   ,        :      .        ;       @       =       ->
 +   +=      -=      *=      /=      //=     %=      @=
 +   &=      |=      ^=      >>=     <<=     **=
 
