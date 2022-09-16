@@ -1,0 +1,127 @@
+
+![ python logo ](/assets/py.jpg)
+
+### 1.4 Ciclos, Arrays, Datos de entrada y salida
+
+##### Datos de entrada
+Entradas en Python
+La función input() permite obtener información del en la terminal desde el teclado, al momento de ejecutarse esta línea en la consola esperara que ingresemos el texto que necesitemos y demos un enter para continuar y guardar el valor capturado en una variable de programa.
+
+~~~
+Pedimos un texto con input()
+print('Escribe tu nombre')
+print(input())
+
+~~~
+
+##### Datos de Salida
+La función print() es sin duda una de las instrucciones más sencillas y que usaremos en el curso, ya que nos permite mostrar información por consola como mensajes, números o valores de una variable. para su uso solo le pasamos en los argumentos lo que deseamos mostrar en consola.
+~~~
+Mostramos un texto con print()
+print('Uso de entradas y salidas')
+print('Esto es un número')
+print(102584)
+~~~
+
+#### 1.4.1 Ciclos
+
+Los ciclos, también conocidos como bucles o estructuras de control repetitivas, son de total importancia para el proceso de creación de un programa. Un ciclo en Python o bucle en Python (como prefieras llamarlos) te permite repetir una o varias instrucciones cuantas veces lo necesitemos, por ejemplo, si quisiéramos escribir los números del uno al cien no tendría sentido escribir cien líneas de código mostrando un número en cada una, para eso y para varias cosas más (que veremos enseguida), es útil un ciclo. Un ciclo nos ayuda a llevar a cabo una tarea repetitiva en una cantidad de líneas muy pequeña y de forma prácticamente automática (y muy rápida).
+Existen diferentes tipos de ciclos o bucles en Python, cada uno tiene una utilidad para casos específicos y depende de nuestra habilidad y conocimientos poder determinar en qué momento es bueno usar alguno de ellos. Tenemos entonces a nuestra disposición los siguientes tipos de ciclos en Python:
+
+#### 1.4.2 Ciclo For
+Los ciclos for (o ciclos para) son una estructura de control cíclica. Nos permiten ejecutar una o varias líneas de código de forma iterativa (o repetitiva), pero teniendo cierto control y conocimiento sobre las iteraciones. En el ciclo for en Python, es necesario tener un valor inicial y un valor final, y opcionalmente podemos hacer uso del tamaño del "paso" entre cada "giro" o iteración del ciclo.
+
+En resumen, un ciclo for en Python es una estructura iterativa para ejecutar un mismo segmento de código una cantidad de veces deseada y conocida. Pues necesitamos conoces previamente un valor de inicio, un tamaño de paso y un valor final para el ciclo. Ya veremos los detalles.
+
+##### Como funcionan 
+Para comprender mejor el funcionamiento del ciclo for, solucionemos un pequeño ejercicio práctico. Supongamos que queremos mostrar los números pares (múltiplos de dos) entre el 500 y el 1000. Con esta información inmediatamente podemos determinar que por medio de un ciclo debemos mostrar una serie de números como la siguiente: 500 502 504 506 ... 600 ... 852 ... 906 ... 980 .. 1000. Tenemos entonces todo lo necesario para nuestro ciclo. Tenemos un valor inicial que sería el 500, un valor final (1000) y tenemos un tamaño de paso que es 2 (los números pares). Estamos ahora en capacidad de determinar los componentes esenciales para un ciclo for.
+
+##### Sintaxis
+La sintaxis de un ciclo for es simple en Python. En realidad, en la mayoría de los lenguajes de alto nivel es incluso muy similar, de hecho, con tan solo tener bien claros los 3 componentes del ciclo for (inicio, final y tamaño de paso) tenemos prácticamente todo hecho
+
+~~~
+for variable_contadora in range(valor_inicial, valor_final, tamaño_paso:
+    ...
+    ...
+    Bloque de Instrucciones...
+    ...
+    ...
+
+Bloque fuera del ciclo...
+~~~
+
+Como puedes ver, la magia está en la función range() de Python, pues con esta definimos desde dónde y hasta dónde irá el ciclo, además del tamaño del paso. De hecho, la función range(), solo necesita como mínimo el límite superior, generando así un rango de números desde cero hasta ese límite de uno en uno. Finalmente, esta función omite el último valor, de ese modo, el ciclo va de valor_inicial hasta valor_final - 1 (hay que quitarle uno al valor_final).
+Por supuesto, como ya se te hará familiar, la instrucción se llama for, i termina con los dos puntos ":", y los que se ejecute en su interior lleva la indentación. Adicionalmente, variable_contadora nos indicará en qué valor exacto del recorrido de ese rango de números nos encontramos.
+
+##### Ejemplo 
+Vamos a retomar el ejemplo mencionado anteriormente, donde deseábamos sacar los números pares entre el número 500 y el 1000 y mostrarlos. Es un ejemplo sencillo con el que nos aseguraremos de haber comprendido bien lo anterior:
+
+~~~
+for i in range(500, 1000 + 1, 2):
+    print(i)
+~~~
+
+
+
+#### 1.4.3 Ciclo While
+
+Los ciclos while son una estructura cíclica, que nos permite ejecutar una o varias líneas de código de manera repetitiva sin necesidad de tener un valor inicial e incluso a veces sin siquiera conocer cuando se va a dar el valor final que esperamos.
+
+Con el ciclo while, no conoces el cuándo sino el cómo. Es decir, conocer la condición bajo la cual se va a detener el ciclo, pero no sabes cuántas iteraciones tomará eso, ni cuánto tiempo. Por ello se los llama ciclos indeterminados.
+
+Funcionan de al siguiente manera
+
+Para comprender mejor el funcionamiento del ciclo while, pongamos un buen ejemplo, imaginemos que, por algún motivo, queremos pedirle a un usuario una serie de números cualquiera y que solo dejaremos de hacerlo cuando el usuario ingrese el número 0. Como vemos, en este caso, no sabemos cuántas veces pedir un valor, solo sabemos en qué momento dejar de pedir uno, pues no tenemos ni idea de cuándo al usuario se le va a ocurrir ingresar un cero. Es algo indeterminado para nosotros. Sin embargo, el ciclo while nos permite ejecutar una acción de forma "infinita" hasta que se cumpla alguna condición específica, en nuestro caso sería que el numero sea 0.
+
+Vamos a ver ahora cómo es la sintaxis de un ciclo while en Python, así estaremos listos para usarlos en nuestros programas de ahora en adelante cada vez que lo necesitemos
+
+##### Sintaxis Ciclo While
+La sintaxis de un ciclo while es incluso más simple y "legible" que la de otros ciclos (que verémos en el siguiente artículo), pues simplemente requerimos tener clara una condición de parada. En realidad, en la mayoría de los lenguajes de alto nivel la manera de escribir un ciclo while (la sintaxis) es incluso muy similar, así que con tan solo tener bien clara una condición de finalización para el ciclo tendremos prácticamente todo hecho.
+
+~~~
+while(condición de finalización): #por ejemplo entrada == 100
+    ...
+    ...
+    Bloque de Instrucciones...
+    Dentro del while
+    ...
+    ...
+
+Bloque de Instrucciones...
+FUERA del while
+~~~
+Como ves, en esencia, es lo mismo que un condicional if(). Sin embargo, ya usas while, y el funcionamiento es completamente diferente, pues esas instrucciones en su interior se ejecutarán tantas veces sea necesario mientras se siga cumpliendo la condición dada
+Es muy importante, como siempre en Python, notar los dos puntos al final de la instrucción del while y que, todo lo que vaya en su interior, debe llevar la indentación.
+
+Si algo no ha quedado muy claro, ya vamos a ver cómo usar el ciclo while en unos casos más prácticos
+
+##### Ejemplo 1: Pedir números por pantalla hasta que alguno sea 0
+
+Vamos a retomar el ejemplo anterior, donde queremos hacer que nuestro programa le pida a un usuario una serie de números cualquiera y que solo dejaremos de hacerlo cuando el usuario ingrese un número igual a cero. Una vez más es un ejemplo sencillo con el que nos aseguraremos de haber comprendido bien todos los conceptos anteriores:
+
+Para solucionar esto, debemos tener clara cuál va a ser la condición que se debe cumplir para que el ciclo esté pidiendo el número contantemente. El ciclo se va a detener solo cuando el número ingresado sea igual a 0, así que la condición para que se siga ejecutando es que el numero NO sea 0. Veámoslo entonces.
+
+~~~
+while(True):
+    numero = float(input('Ingresa un número. 0 para terminar: '))
+
+    if (numero == 0):
+        break
+
+print('Fin del programa.')
+
+~~~
+
+##### Ejemplo de datos de entrada y salida
+
+~~~
+*Mostramos un texto con print()
+print('Uso de entradas y salidas')
+
+print('Esto es un número')
+print(102584)
+
+*Pedimos un texto con input()
+print('Escribe tu nombre')
+print(input())
+~~~
