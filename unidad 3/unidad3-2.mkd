@@ -1,0 +1,18 @@
+### Usos y aplicaciones de NAO
+
+El robot NAO está indicado para niños a partir de 7 años, lo que comprende desde la Educación infantil, básica, media y educación superior. Una de las principales características de NAO es que detecta el estado de ánimo de una persona y expresa emociones como tristeza, alegría, sorpresa y miedo.
+A continuación vamos a detallar las ventajas y beneficios que ofrece Nao en sus diversas utilidades:
+* Beneficios de NAO en la educación: Su uso incrementa la participación del estudiante que repercute directamente en alcanzar los objetivos académicos. Les permite unir en los proyectos la práctica con la teoría. Ayuda a fomenta el trabajo en equipo, la resolución de problemas y el desarrollo de habilidades. Especialmente útil por medio de la programación para proyectos de ciencias, matemáticas, tecnología e ingeniería robótica.
+* Aplicaciones de NAO en la investigación: El robot humanoide dispone de una plataforma de pruebas perfecta para modelos teóricos y conceptuales, además de un software con programación multidioma que favorece la interacción entre humano y robot.
+* Proyectos de educación especial: Esta orientado para trabajar con niños autistas y con necesidades especiales, favoreciendo la interacción con niños de manera visual, verbal y táctil.
+* Uso de NAO en el ámbito doméstico: Promueve el aprendizaje en la robótica entre niños y personas mayores. En hogar puede convertirse en un componente más, capaz de contar cuentos e historias, motivando en el recordatorio de los hábitos saludables o simplemente para vigilar la casa.
+* Ventajas de su uso en las empresas: Disponer de la tecnología más avanzada te permite impactar a tus clientes al ofrecerles un robot con el que puedan interaccionar. También puede ser una herramienta con la que fomentar los proyectos de marketing de la empresa.  
+
+####  Software de programación del robot NAO
+
+Si deseas aprender cómo programar al robot NAO te adelantamos que es relativamente sencillo programarlo y que no hace falta tener conocimientos previos en programación. Incorpora un software en el que podrás utilizar sistemas operativos como Windows, Linux y MAC. Tiene herramienta gráfica de programación, un software de simulación y adicionalmente un kit de desarrollo de software.
+El software permite personalizar su Lenguaje de Programación para adaptarlo a cualquier usuario, ya sea un niño o un adulto. Tienes la posibilidad de programar por medio del sistema de bloques de «arrastrar y soltar», a la vez que admite lenguajes de programación avanzados como:
+* C++,
+* Python
+* Java
+* MATLAB

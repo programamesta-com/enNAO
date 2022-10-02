@@ -1,0 +1,12 @@
+### Que es Nao 
+
+Hoy les  presentamos al robot NAO V5, uno de los robots humanoides más avanzados del mundo. Es un robot autónomo que estaca por incorporar tecnología avanzada en ingeniería mecánica y software. Con ella es capaz de reconocer el rostro de las personas y detectar sus emociones, a la vez que escuchar, hablar e interactuar con ellas.
+NAO puede ser programado para realizar diferentes funciones, aunque principalmente ha sido diseñado para fomentar el desarrollo y la interacción entre personas y máquinas. 
+
+
+
+
+
+
+
+![ nao](/assets/nao.png)
