@@ -1,0 +1,138 @@
+### Numpy y imagenes 
+
+Veamos cómo convertir una imagen en una matriz NumPy y luego guardar esa matriz en un archivo CSV en Python. Primero, aprenderemos cómo convertir una imagen en un ndarray numpy. Existen muchos métodos para convertir una imagen a ndarray, algunos de ellos son:
+
+* Método 1: Uso de la biblioteca PIL y NumPy .
+* Usaremos PIL.Image.open() y numpy.asarray() .
+    
+    Ejemplo
+~~~
+
+from PIL import Image 
+import numpy as gfg 
+  
+img = Image.open('geeksforgeeks.jpg') 
+  
+imageToMatrice = gfg.asarray(img) 
+  
+print(imageToMatrice.shape)
+~~~ 
+y tendremos una salida de
+
+~~~
+(251, 335, 3)
+~~~
+
+Ahora, la variable imageToMatrice contiene el ndarray que se obtiene después de la conversión de la imagen dada. 
+
+La dimensión de la matriz obtenida se decide por cuántos canales están presentes en la imagen:
+
+* Para una imagen en blanco y negro o en escala de grises: solo hay un canal presente, por lo tanto, la forma de las matrices sería(n, n) donde n representa la dimensión de las imágenes(píxeles), y los valores dentro de la matriz van desde 0 a 255.
+* Para imagen en color o RGB: renderizará un tensor de 3 canales, por lo que la forma de las matrices sería(n, n, 3). Cada canal es una matriz(n, n) donde cada entrada representa respectivamente el nivel de rojo, verde o azul en la ubicación real dentro de la imagen.
+
+Usaremos dos métodos para hacer lo mismo, el primer método usando la biblioteca numpy y el segundo método usando la biblioteca pandas:
+Nota: podemos guardar solo una matriz 1D o 2D en un archivo, por lo tanto, no habría ningún problema en la escala de grises o la imagen en blanco y negro, ya que es una matriz 2D, pero debemos asegurarnos de que esto funcione para un color o Imagen RGB, que es una matriz 3D.
+
+* Método 1: uso de la biblioteca NumPy .
+Usaremos numpy.savetxt() y numpy.loadtxt().
+
+Ejemplo:
+~~~
+import numpy as gfg 
+import matplotlib.image as img 
+  
+imageMat = img.imread('gfg.jpg') 
+print("Image shape:", imageMat.shape) 
+  
+if(imageMat.shape[2] == 3): 
+    
+  
+  imageMat_reshape = imageMat.reshape(imageMat.shape[0], 
+                                      -1) 
+  print("Reshaping to 2D array:", 
+        imageMat_reshape.shape) 
+  
+else: 
+  
+  imageMat_reshape = imageMat 
+      
+gfg.savetxt('geek.csv', 
+            imageMat_reshape) 
+  
+loaded_2D_mat = gfg.loadtxt('geek.csv') 
+  
+loaded_mat = loaded_2D_mat.reshape(loaded_2D_mat.shape[0],  
+                                   loaded_2D_mat.shape[1] // imageMat.shape[2], 
+                                   imageMat.shape[2]) 
+  
+print("Image shape of loaded Image:",  
+      loaded_mat.shape) 
+  
+if((imageMat == loaded_mat).all()): 
+    
+  print("\n\nYes", 
+        "The loaded matrice from CSV file is same as original image matrice")
+~~~
+
+Salida:
+
+    Forma de la imagen:(251, 335, 3)
+    Transformación a matriz 2D:(251, 1005)
+    Forma de la imagen de la imagen cargada:(251, 335, 3)
+
+    Sí La matriz cargada del archivo CSV es la misma que la matriz de imagen original
+
+* Método 2: uso de la biblioteca Pandas 
+Usaremos el método pandas.Dataframe( ) y pandas.Dataframe() .to_csv() .
+
+~~~
+import numpy as gfg 
+import matplotlib.image as img 
+import pandas as pd 
+  
+imageMat = img.imread('gfg.jpg') 
+print("Image shape:",  
+      imageMat.shape) 
+  
+if(imageMat.shape[2] == 3): 
+    
+  
+  imageMat_reshape = imageMat.reshape(imageMat.shape[0], 
+                                      -1) 
+  print("Reshaping to 2D array:",  
+        imageMat_reshape.shape) 
+  
+else: 
+  
+  imageMat_reshape = imageMat 
+      
+mat_df = pd.DataFrame(imageMat_reshape) 
+  
+mat_df.to_csv('gfgfile.csv', 
+              header = None, 
+              index = None) 
+  
+loaded_df = pd.read_csv('gfgfile.csv',  
+                        sep = ',', 
+                        header = None) 
+loaded_2D_mat = loaded_df.values 
+  
+loaded_mat = loaded_2D_mat.reshape(loaded_2D_mat.shape[0], 
+                                   loaded_2D_mat.shape[1] // imageMat.shape[2], 
+                                   imageMat.shape[2]) 
+  
+print("Image shape of loaded Image :", 
+      loaded_mat.shape) 
+  
+if((imageMat == loaded_mat).all()): 
+  print("\n\nYes", 
+        "The loaded matrice from CSV file is same as original image matrice")
+~~~
+
+Salida:
+
+    Forma de la imagen:(251, 335, 3)
+    Transformación en matriz 2D:(251, 1005)
+    Forma de la imagen de la imagen cargada:(251, 335, 3)
+
+    Sí La matriz cargada del archivo CSV es la misma que la matriz de imagen original

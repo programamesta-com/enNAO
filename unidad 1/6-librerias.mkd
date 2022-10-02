@@ -1,1 +1,40 @@
-### librerias en python
+![ python librerias ](/assets/libreriaspython.jpg)
+## Librerias en python
+
+Las librerías de Python son una herramienta fundamental para consolidar la formación de todo programador.
+Antes de conocer cuáles son las librerías de Python más usadas, consideramos importante que conozcas puntualmente qué son las librerías de Python. 
+Según David Zarruk, profesor del curso de analítica predictiva y modelos de regresión en Python, una librería de programación es un conjunto de funciones que alguien escribió en alguna parte del mundo y ha disponibilizado para que cualquiera pueda utilizarlo de forma gratuita. 
+Entonces, ¿qué es una librería en Python? Este concepto hace referencia al conjunto de implementos funcionales que te ayudarán a codificar todo este lenguaje de programación para crear una interfaz independiente. 
+Las librerías de Python son amplias y cuentan con gran cantidad de producciones en contenidos. Constan de diversos módulos que permiten el acceso de funcionalidades específicas del sistema como entrada y salida de archivos, soluciones estandarizadas a problemas de programación, etc.
+Además, dependiendo del sistema operativo que tengas, puedes conseguir diferentes funciones de cada una de las librerías de Python. Por ejemplo, para el sistema Windows se incluye la biblioteca estándar completa junto con componentes adicionales.
+Un plus para las librerías de Python es que cuentan con una colección de componentes como, por ejemplo, programas individuales, módulos, paquetes, frameworks, aplicaciones y más funciones que puedes encontrar en Python Package Index.
+
+#### 6.1 ¿Cuáles son los tipos de librerías de Python que existen? 
+
+Las librerías de Python pueden ser utilizadas para muchas áreas de programación, pues cada sistema cuenta con diferentes procesos que necesitan de una biblioteca específica para resolver diversas funciones.  
+A continuación, te presentamos algunos tipos de librerías de programación para que elijas el que mejor se acomoda a tus necesidades.
+
+*  Visualización: ideales para entender mejor los datos y tener una mejor comprensión de cualquier problema que pueda surgir.
+
+* Cálculo Numérico: las más indicadas para la preparación de datos y cálculo de atributos relevantes. 
+
+* Machine Learning: están enfocadas en procesar información y en resolver problemas de clasificación y regresión de datos. 
+
+* Deep Learning: orientadas hacia la predicción de datos a partir de un conjunto amplio de información. 
+
+* Inteligencia Artificial Explicable: aplican métodos y técnicas tecnológicas que aplican inteligencia artificial para brindar resultados eficientes.
+
+* Procesamiento de Lenguaje Natural: utilizan el cálculo de frecuencias normalizadas para construir modelos con datos de texto. 
+
+#### 6.2 ¿Cuáles son las mejores librerías de Python?
+
+aqui una pequeña recopilacion de algunas librerias 
+que para nosotros son las fundamentales para python
+
+
+* Deep learning: Están enfocadas, de cara a la predicción de datos; a través del Big Data.
+* Machine learning: Estas librerías son útiles para el machine learning, ya que mejoran el proceso de información y la resolución de problemas de clasificación y el análisis de regresión de datos.
+* Cálculo numérico: Preparan los datos y ofrecen atributos importantes para su cálculo.
+* Visualización: Sirven para entender y comprender los datos, de una forma más legible. 
+* Inteligencia Artificial explicable: Buscan resultados óptimos en Inteligencia Artificial, llevando adelante diversas metodologías tecnológicas.
+* Procesamiento de lenguaje natural: A partir del cálculo de frecuencias normalizadas, se construyen los modelos con datos de texto.

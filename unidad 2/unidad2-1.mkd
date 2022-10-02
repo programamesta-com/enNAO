@@ -1,0 +1,44 @@
+![ opencv](/assets/opencv.png)
+
+### OpenCV 
+### ¡Descubre todo acerca de la visión artificial!
+
+OpenCV (Open Source Computer Vision) es una librería software open-source de visión artificial y machine learning.
+
+OpenCV provee una infraestructura para aplicaciones de visión artificial.
+
+OpenCV tiene una licencia BSD, lo que permite utilizar y modificar el código, tiene una comunidad de más de 47000 personas y más de 7 millones de descargadas. Es una librería muy usada a nivel comercial, desde Google, Yahoo, Microsoft, Intel, IBM, Sony, Honda, Toyota, Applied Minds, VideoSurf, Zeitera…
+
+La librería tiene más de 2500 algoritmos, que incluye algoritmos de machine learning y de visión artificial para usar.
+
+Estos algoritmos permiten identificar objetos, caras, clasificar acciones humanas en vídeo, hacer tracking de movimientos de objetos, extraer modelos 3D, encontrar imágenes similares, eliminar ojos rojos, seguir el movimiento de los ojos, reconocer escenarios,…
+
+Se usa en aplicaciones como la detección de intrusos en vídeos, monitorización de equipamientos, ayuda a navegación de robots, inspeccionar etiquetas en productos
+
+#### ¿Para qué sirve OpenCV?
+
+Su utilización principal abarca la detección de objetos y rostros, especialmente en aspectos como la seguridad, el marketing o incluso la fotografía.
+Si quieres tomar fotos profesionales con tu smartphone, ¡entonces inscríbete en nuestro curso gratuito!
+Con sus más de 2500 algoritmos a cuestas, debes saber que OpenCV es capaz de acciones como las siguientes:
+
+* Identificar objetos o caras (reconocimiento facial)
+* Encontrar imágenes similares.
+* Eliminar los ojos rojos de las fotografías.
+* Reconocer escenarios.
+* Seguir los movimientos de los ojos.
+* Clasificar acciones humanas que estén en videos.
+* Extraer modelos 3D.
+* Útil en campos como la robótica y la realidad aumentada.
+
+Con esta herramienta tenemos a la mano una biblioteca para aplicaciones de visión artificial, por lo que su potencial podría acelerar su utilización para fines comerciales próximamente.
+No hay dudas de que OpenCV es un paso más hacia cotas más altas en el ámbito tecnológico. Veamos más acerca de las virtudes de este software.
+
+#### Ventajas de open cv 
+
+* Sirve de proveedor de infraestructura para las aplicaciones relacionadas con la visión artificial.
+* Es multiplataforma, capaz de ejecutarse en los principales sistemas operativos de tus dispositivos (Windows, Mac OS X, Linux, Android o iOS).
+* Aunque este proyecto fue escrito en C y C++, se pueden utilizar en otros lenguajes de programación como Java, C# y uno de los más importantes, Python.
+* Sólo ha contado con 3 versiones, lo que habla de la eficiencia de esta biblioteca desde su lanzamiento hace más de 21 años.
+* Su desarrollo es permanente gracias al voluntariado, aunque muchas compañías importantes apoyan su desarrollo, como es el caso de Google.
+* Hablar de qué es OpenCV y sus posibilidades en un solo post es quedarse corto. Necesitaríamos 3 o 4 para entender el mundo de posibilidades que tenemos a nuestros pies con esta fabulosa herramienta.
+* Ahora, ¿no te interesa aprender a instalar OpenCV en tu dispositivo? Hay varias formas de hacerlo

@@ -1,0 +1,46 @@
+### Procesamiento de imagenes con OpenCV
+
+Puedes leer la imagen en un array numpy usando la librería opencv. El array contiene datos a nivel de píxel. Y según la necesidad, puede modificar los datos de la imagen a nivel de píxel mediante la actualización de los valores de la matriz.
+
+Para leer una imagen en Python usando OpenCV, use la función cv2.imread(). imread() devuelve una matriz 2D o 3D basada en el número de canales de color presentes en la imagen. Para una imagen binaria o en escala de grises, la matriz 2D es suficiente. Pero para una imagen en color, se necesita una matriz 3D.
+Sintaxis de cv2.imread()
+La sintaxis de la función cv2.imread() es la siguiente.
+~~~
+cv2.imread(/ruta/para/imagen, bandera)
+~~~
+
+donde /ruta/para/imagen tiene que ser la ruta absoluta completa a la imagen. La bandera es opcional y se puede pasar uno de los siguientes valores posibles para la bandera.
+
+* cv2.IMREAD_COLOR lee la imagen con colores RGB pero sin canal de transparencia. Este es el valor por defecto de la bandera cuando no se proporciona ningún valor como segundo argumento para cv2.imread().
+* cv2.IMREAD_GRAYSCALE lee la imagen como imagen gris. Si la imagen de origen es una imagen en color, el valor de gris de cada píxel se calcula tomando la media de los canales de color, y se lee en la matriz.
+* cv2.IMREAD_UNCHANGED lee la imagen tal y como es de la fuente. Si la imagen de origen es RGB, carga la imagen en el array con los canales Rojo, Verde y Azul. Si la imagen de origen es ARGB, carga la imagen con tres componentes de color junto con el canal alfa o de transparencia.
+
+* Ejemplo 1: OpenCV cv2 Lee una imagen en color
+
+En este ejemplo, leeremos una imagen en color. Como el valor por defecto del argumento bandera es cv2.IMREAD_COLOR, no vamos a pasar el argumento explícitamente.
+
+~~~
+import cv2
+#lectura de la imagen 
+img = cv2.imread('C:\\Users\\srr\\Desktop\\testPython\\espacio-astronauta.jpg')
+#imprimir su forma
+print('Dimensiones de la imagen :', img.shape)
+~~~
+
+Ejecute el programa python anterior, y obtendrá la siguiente salida.
+~~~
+Dimensiones de la imagen : (640, 640, 3)
+~~~
+
+
+img.shape devuelve una tupla que representa (altura, anchura, número_de_canales). La altura de la imagen es de 400 píxeles, la anchura es de 640 y hay tres canales de color en la imagen. Para cv2.IMREAD_COLOR, el canal de transparencia se ignora aunque esté presente.
+
+### imread y las extensiones de archivo
+
+Hay muchas extensiones utilizadas para las imágenes en función del sistema operativo, la técnica de compresión, etc.
+
+Cuando el método imread() lee la imagen, no considera la extensión del nombre del archivo de la imagen para determinar el formato de la misma. Pero decide la extensión basándose en el formato presente en los datos del archivo.
+
+imread() soporta JPEGs, PNGs y TIFFs en todas las plataformas. Pero para la combinación de otros formatos y sistemas operativos, imread() puede considerar los códecs del nivel del sistema operativo. Puede consultar la documentación oficial de imread() para estos escenarios especiales.
+
+Concluyendo este tutorial de Ejemplos de Python, hemos aprendido a usar el método imread() de cv2 para leer una imagen en un Array de Python.

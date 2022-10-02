@@ -1,0 +1,56 @@
+### Deteccion de objetos con cascade 
+
+Los clasificadores Haar Cascade son una forma eficaz de detección de objetos. Este método fue propuesto por Paul Viola y Michael Jones en su artículo Detección rápida de objetos usando una cascada impulsada de características simples. Haar Cascade es un enfoque basado en el machine learning en el que se utilizan muchas imágenes positivas y negativas para entrenar al clasificador.
+* Imágenes positivas: estas imágenes contienen las imágenes que queremos que nuestro clasificador identifique.
+* Imágenes negativas: imágenes de todo lo demás, que no contienen el objeto que queremos detectar.
+Requisitos
+Asegúrese de tener Python, Matplotlib y OpenCV instalados en su PC(todas las últimas versiones).
+
+~~~
+import cv2 
+import numpy as np 
+import matplotlib.pyplot as plt % matplotlib inline 
+  
+  
+face_cascade = cv2.CascadeClassifier('../DATA / haarcascades / haarcascade_frontalface_default.xml') 
+eye_cascade = cv2.CascadeClassifier('../DATA / haarcascades / haarcascade_eye.xml') 
+  
+  
+  
+def adjusted_detect_face(img): 
+      
+    face_img = img.copy() 
+      
+    face_rect = face_cascade.detectMultiScale(face_img,  
+                                              scaleFactor = 1.2,  
+                                              minNeighbors = 5) 
+      
+    for (x, y, w, h) in face_rect: 
+        cv2.rectangle(face_img,(x, y),  
+                      (x + w, y + h),(255, 255, 255), 10)\ 
+          
+    return face_img 
+  
+  
+def detect_eyes(img): 
+      
+    eye_img = img.copy()     
+    eye_rect = eye_cascade.detectMultiScale(eye_img,  
+                                            scaleFactor = 1.2,  
+                                            minNeighbors = 5)     
+    for (x, y, w, h) in eye_rect: 
+        cv2.rectangle(eye_img,(x, y),  
+                      (x + w, y + h),(255, 255, 255), 10)         
+    return eye_img 
+  
+img = cv2.imread('../sachin.jpg') 
+img_copy1 = img.copy() 
+img_copy2 = img.copy() 
+img_copy3 = img.copy() 
+  
+face = adjusted_detect_face(img_copy) 
+plt.imshow(face)
+~~~
+* Codigo para la deteccion de ojos 
+
+Haar Cascades se puede utilizar para detectar cualquier tipo de objeto siempre que tenga el archivo XML adecuado para ello. Incluso puede crear sus propios archivos XML desde cero para detectar cualquier tipo de objeto que desee.
