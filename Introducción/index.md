@@ -2,6 +2,7 @@
 
 [Motivacion](https://github.com/programamesta-com/enNAO/blob/main/Introducci%C3%B3n/motivacion.md)
 
+[Recuersos](https://itescamedu-my.sharepoint.com/:f:/g/personal/7251_itescam_edu_mx/Elc6KP0UuCNJpmyJbDCcLM0B_T-BY6u5aQE0UEHomwCFoQ?e=hXPPxY)
 
 [Unidad1 Python](https://github.com/programamesta-com/enNAO/tree/main/unidad%201)
 * [Introduccion](https://github.com/programamesta-com/enNAO/blob/main/unidad%201/introduccion.mkd)
