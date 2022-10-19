@@ -1,6 +1,6 @@
-## Aqui inicia tu camino como programador
+## Aqui inicia tu camino en este taller 
 
-El mundo no es todo alegría y color, es un lugar terrible y por muy duro que seas es capaz de arrodillarte a golpes y tenerte sometido a golpes permanente si no se lo impides, ni tu ni yo ni nadie golpea mas fuerte que la vida. Pero no importa lo fuerte que golpeas, sino lo fuerte que pueden golpearte y los aguantas mientras avanzas, hay que soportar sin dejar de avanzar.
+Recuerda que e l mundo no es todo alegría y color, es un lugar terrible y por muy duro que seas es capaz de arrodillarte a golpes y tenerte sometido a golpes permanente si no se lo impides, ni tu ni yo ni nadie golpea mas fuerte que la vida. Pero no importa lo fuerte que golpeas, sino lo fuerte que pueden golpearte y los aguantas mientras avanzas, hay que soportar sin dejar de avanzar.
 
 ¡Así es como se gana!
 
