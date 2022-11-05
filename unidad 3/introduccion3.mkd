@@ -1,2 +1,4 @@
 ### Introduccion curso NAO
 
+En esta ultima unidad de nuestro taller de python y NAO 
+comienza la parte divertida en la cual usamores el choregraphe para utilizar nuestro NAO virtual y poder hacer sin fin de cosas esta unidad es introductoria en la cual veremos los usos de Nao y el uso de su software para crear rutinas 

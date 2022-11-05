@@ -1,0 +1,8 @@
+### Introduccion unidad 2 
+
+bien has llegado a la unidad 2 de este taller!!
+
+en esta unidad veras las librerias de python OpenCV y Cascade las cuales nos permite poder usar reconocimiento por camara para objetos,personas y mas, en esta unidad estaremos viendo lo que es procesamiento de imagenes mediante openCV y cascade de igual forma veremos numpy para imagenes y para acabar esta unidad haremos un detector de objetos con cascade
+intereante no?? 
+pues que espera y ve por esa primera leccion!!
+
